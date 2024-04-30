@@ -111,8 +111,6 @@ export default class PartifulApi {
     const dateTime = timeElement.attr('datetime') || null;
     const startDatetime = dateTime ? new Date(dateTime).toISOString() : null;
 
-    // TODO: Parse event end time from HTML
-
     const event = {
       id: eventId,
       name: name,
