@@ -1,0 +1,16 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["eslint", "typescript", "unicorn", "oxc", "jest"],
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "overrides": [
+    {
+      "files": ["**/__tests__/**/*.{js,ts}", "**/*.{test,spec}.{js,ts}"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}
